@@ -36,7 +36,8 @@ var ListItem = React.createClass({
     renderTree: function () {
         return [
             "li", { className: "ListItem" }, [
-                "a", { href: "/items/" + this.props.item.id }, this.props.item.name,
+                "a", { href: "/items/" + this.props.item.id },
+                    this.props.item.name,
             ],
         ];
     },
